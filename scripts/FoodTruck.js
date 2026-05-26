@@ -1,13 +1,23 @@
-import { Sales } from "./Sales.js"
+import { purchases } from "./Purchases.js"
+import { EntreeOptions } from "./Entrees.js";
 
-export const FoodTruck = () => {
-    const salesHTML = Sales()
+export const FoodTruck = async () => {
+    const salesHTML = await purchases()
+    const entreesHTML = await EntreeOptions()
 
     return `
         <header class="header">
             <img src="./images/hummus.png" class="logo" />
             <h1 class="title">Laura Kathryn's House of Hummus</h1>
         </header>
+        <div class="options-container">
+            <section class="options-card">
+                    <h2>Base Dish</h2>
+                <div class="options-list">
+                    ${entreesHTML}
+                </div>
+            </section>
+        </div>
 
         <article>
             <button id="purchase">Purchase Combo</button>
