@@ -1,5 +1,6 @@
 import { purchases } from "./Purchases.js"
 import { EntreeOptions } from "./Entrees.js";
+import "./PurchaseButton.js"
 
 export const FoodTruck = async () => {
     const salesHTML = await purchases()
