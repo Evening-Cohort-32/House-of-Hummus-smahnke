@@ -1,7 +1,6 @@
 // Set up the transient state data structure and provide initial values
 export const transientState = {
     entreeId: 0,
-    price: 0,
     vegetableId: 0,
     sideId: 0
 }

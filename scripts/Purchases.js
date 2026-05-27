@@ -10,7 +10,7 @@ export const purchases = async () => {
     // Generate HTML for each order using .map()
     const purchasesHTML = purchases.map(
         (purchase) => {
-            const purchasePrice = purchase.entree.price + purchase.side.price + purchase.vegetable.price
+            const purchasePrice = (purchase.entree.price + purchase.side.price + purchase.vegetable.price).toFixed(2)
             return `
                 <article class="order">
                     <h2>Receipt #${purchase.id} = $${purchasePrice}</h2>

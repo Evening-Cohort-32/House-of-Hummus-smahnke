@@ -132,10 +132,9 @@
   ],
   "purchases": [
     {
-      "entreeId": 0,
-      "price": 0,
-      "vegetableId": 0,
-      "sideId": 0,
+      "entreeId": 3,
+      "vegetableId": 1,
+      "sideId": 6,
       "id": 1
     }
   ]
